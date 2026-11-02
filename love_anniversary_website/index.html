@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff3f5" />
+  <title>For By, With All My Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+  </div>
+
+  <main class="app-shell">
+    <section id="lock-screen" class="screen lock-screen active">
+      <div class="eyebrow">A little surprise for my favorite person</div>
+      <div class="big-heart" aria-hidden="true">♥</div>
+      <p class="script-note">just for you, By</p>
+      <h1>A Little World<br><em>Made for You</em></h1>
+      <p class="intro">Three years of us, and I'd still choose you. 💗<br>Enter our special date to come inside.</p>
+      <form id="date-form" class="date-form">
+        <label for="anniversary-date">When is our anniversary?</label>
+        <input id="anniversary-date" type="text" autocomplete="off" placeholder="Enter our anniversary date" />
+        <button class="primary-button" type="submit">Unlock my heart <span>♡</span></button>
+        <p id="date-error" class="error-message" role="status"></p>
+      </form>
+      <p class="tiny-note">A date only we know ✨</p>
+    </section>
+
+    <section id="home-screen" class="screen">
+      <div class="eyebrow">For By, my favorite person</div>
+      <h2 class="section-title">Three years of us,<br><em>a lifetime to go</em></h2>
+      <p class="section-subtitle">I made these little things to remind you how loved you are. 💕</p>
+      <div class="heart-menu">
+        <button class="heart-card" data-page="flower-page" aria-label="Open Your Favorite Flower">
+          <span class="menu-heart">♥</span>
+          <span class="heart-card-title">Your Favorite<br>Flower</span>
+          <span class="heart-card-caption">A little bloom for you</span>
+        </button>
+        <button class="heart-card" data-page="memories-page" aria-label="Open Our Memories">
+          <span class="menu-heart">♥</span>
+          <span class="heart-card-title">Our<br>Memories</span>
+          <span class="heart-card-caption">Every little moment, us</span>
+        </button>
+        <button class="heart-card" data-page="letter-page" aria-label="Open Letter for My Love">
+          <span class="menu-heart">♥</span>
+          <span class="heart-card-title">Letter for<br>My Love</span>
+          <span class="heart-card-caption">A little love note for By</span>
+        </button>
+      </div>
+      <p class="footer-note">Three years down, forever to go. <span>♥</span></p>
+    </section>
+
+    <section id="flower-page" class="screen inner-page">
+      <button class="back-button" data-home aria-label="Back to the three hearts">← <span>Back to our little world</span></button>
+      <div class="eyebrow">Something lovely, just like you</div>
+      <h2 class="section-title">Your Favorite <em>Flower</em></h2>
+      <p class="section-subtitle">If I could, I'd fill your world with flowers, By.</p>
+      <div class="flower-placeholder">
+        <img class="flower" src="./images/il_1140xN.5827987247_eoxc.webp">
+      </div>
+      <div class="editable-note">
+        <p class="label">A little note for you</p>
+        <p>Hope you like it Byy, bawi lang ko sunod simo. I Love Youuu!</p>
+      </div>
+    </section>
+
+    <section id="memories-page" class="screen inner-page memories-screen">
+      <button class="back-button" data-home aria-label="Back to the three hearts">← <span>Back to our little world</span></button>
+      <div class="eyebrow">My favorite story is the one with you in it</div>
+      <h2 class="section-title">Our <em>Memories</em></h2>
+      <p class="section-subtitle">Three years, countless little moments, and so many more to come. Tap a photo to bring it to the front. 📸</p>
+      <div id="memory-cloud" class="memory-cloud" aria-label="Moving gallery of our memories"></div>
+      <div id="photo-viewer" class="photo-viewer hidden" aria-live="polite">
+        <div class="viewer-frame">
+          <img id="featured-photo" src="" alt="Our special memory" />
+          <p id="featured-caption" class="featured-caption">A little moment with you ♡</p>
+        </div>
+        <button id="return-photo-button" class="primary-button return-photo-button" type="button">Return to all our pictures ↩</button>
+      </div>
+      <div class="editable-note memory-message">
+        <p class="label">Our story, in my word</p>
+        <p>Every picture holds a precious memory that I will treasure forever.❤️</p>
+      </div>
+    </section>
+
+    <section id="letter-page" class="screen inner-page">
+      <button class="back-button" data-home aria-label="Back to the three hearts">← <span>Back to our little world</span></button>
+      <div class="eyebrow">Open whenever you need a little love</div>
+      <h2 class="section-title">Letter for <em>My Baby</em></h2>
+      <div class="letter-paper">
+        <div class="letter-decoration">♡</div>
+        <p class="letter-greeting">To my By, my love,</p>
+        <div class="letter-body">
+          <p>Happy anniversary, Byy! 💗</p>
+          <p>Three years with you, and somehow you still give me excitement. When I think about us, I feel so lucky that life brought me to you. Thank you for being part of my days, for the little moments that turn into my favorite memories, and for making ordinary things feel special just because I get to share them with you.</p>
+          <p>I hope you always remember how precious you are to me. I may not get every little thing right, and I may not always find the perfect words, but my feelings for you are real. I want to keep learning you, laughing with you, supporting you, and choosing you not only on anniversaries, but on the normal days in between.</p>
+          <p>These three years mean so much to me, By. I’m very very thankful for every memory we’ve made and excited for all the ones we haven’t made yet. If I could make one wish for us, it would be that we keep growing together, keep being gentle with each other, and keep finding our way back to one another.</p>
+          <p>Thank you for being you, and for letting me love you. If I had to start our story all over again, I would still hope it leads me to you.</p>
+        </div>
+        <p class="letter-signoff">With all my love, today and always,</p>
+        <p class="signature">Your love ♥</p>
+      </div>
+      <p class="letter-footnote">Three years with you is a beautiful chapter. I can't wait for the rest of our story. ♡</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
